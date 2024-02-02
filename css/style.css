@@ -547,7 +547,6 @@ body::after {
 
 .swiper-slide img {
   position: relative;
-  width: 100%;
   height: 1066px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1131,14 +1130,12 @@ body::after {
   }
 }
 
-@media (min-width: 93.75em) {
-  .item2 img {
-    width: 34.375rem;
-  }
-}
-
 @media (min-width: 94.125em) {
   .item img {
+    width: 420px;
+  }
+
+  .item2 img {
     width: 420px;
   }
 }
@@ -1146,6 +1143,12 @@ body::after {
 @media (min-width: 100em) {
   .baner-section__title {
     width: 44rem;
+  }
+}
+
+@media (min-width: 160em) {
+  .swiper-slide img {
+    width: 160rem;
   }
 }
 
@@ -1163,6 +1166,18 @@ body::after {
   }
 
   .item img {
+    width: 20rem;
+  }
+
+  .item2 {
+    width: 20rem;
+  }
+
+  .item2 img {
+    width: 20rem;
+  }
+
+  .item2 img {
     width: 20rem;
   }
 }
@@ -1252,21 +1267,39 @@ body::after {
   .item img {
     width: 18.75rem;
   }
+
+  .item2 {
+    width: 18.75rem;
+  }
+
+  .item2 img {
+    width: 20rem;
+  }
+
+  .item2 img {
+    width: 18.75rem;
+  }
 }
 
 @media (max-width: 48em) {
   .baner-section__title {
     width: 35.625rem;
   }
-
-  .item2 img {
-    width: 20rem;
-  }
 }
 
 @media (max-width: 340px) {
   .page-posts__container {
     justify-items: normal;
+  }
+
+  .page-posts2__container {
+    justify-items: normal;
+  }
+}
+
+@media (max-width: 20em) {
+  .swiper-slide img {
+    width: 20rem;
   }
 }
 
@@ -1581,7 +1614,7 @@ body::after {
   }
 
   .page-posts2__container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   }
 
   .item2 {
@@ -1613,10 +1646,6 @@ body::after {
   }
 
   .baner-section__title {
-    width: 20rem;
-  }
-
-  .item2 img {
     width: 20rem;
   }
 }
@@ -1731,6 +1760,20 @@ body::after {
 }
 }
 
+@media (min-width: 20em) and (max-width: 160em) {
+@supports (width: clamp( 20rem , 0.0000000625rem  +  100vw , 160rem )) {
+    .swiper-slide img {
+      width: clamp( 20rem , 0.0000000625rem  +  100vw , 160rem );
+    }
+}
+
+@supports not (width: clamp( 20rem , 0.0000000625rem  +  100vw , 160rem )) {
+    .swiper-slide img {
+      width: calc(20rem + 140 * (100vw - 20rem) / 140);
+    }
+}
+}
+
 @media (max-width: 1270px) and (min-width: 79.375em) {
   .page-welcome {
     height: 90.625rem;
@@ -1795,6 +1838,18 @@ body::after {
   .item img {
     width: 34.375rem;
   }
+
+  .item2 {
+    width: 34.375rem;
+  }
+
+  .item2 img {
+    width: 34.375rem;
+  }
+
+  .item2 img {
+    width: 34.375rem;
+  }
 }
 
 @media (max-width: 1499px) and (min-width: 48em) and (max-width: 93.75em) {
@@ -1845,6 +1900,42 @@ body::after {
       width: calc(20rem + 14.375 * (100vw - 48rem) / 45.75);
     }
 }
+
+@supports (width: clamp( 20rem , 4.9180327869rem  +  31.4207650273vw , 34.375rem )) {
+    .item2 {
+      width: clamp( 20rem , 4.9180327869rem  +  31.4207650273vw , 34.375rem );
+    }
+}
+
+@supports not (width: clamp( 20rem , 4.9180327869rem  +  31.4207650273vw , 34.375rem )) {
+    .item2 {
+      width: calc(20rem + 14.375 * (100vw - 48rem) / 45.75);
+    }
+}
+
+@supports (width: clamp( 20rem , 4.9180327869rem  +  31.4207650273vw , 34.375rem )) {
+    .item2 img {
+      width: clamp( 20rem , 4.9180327869rem  +  31.4207650273vw , 34.375rem );
+    }
+}
+
+@supports not (width: clamp( 20rem , 4.9180327869rem  +  31.4207650273vw , 34.375rem )) {
+    .item2 img {
+      width: calc(20rem + 14.375 * (100vw - 48rem) / 45.75);
+    }
+}
+
+@supports (width: clamp( 20rem , 4.9180327869rem  +  31.4207650273vw , 34.375rem )) {
+    .item2 img {
+      width: clamp( 20rem , 4.9180327869rem  +  31.4207650273vw , 34.375rem );
+    }
+}
+
+@supports not (width: clamp( 20rem , 4.9180327869rem  +  31.4207650273vw , 34.375rem )) {
+    .item2 img {
+      width: calc(20rem + 14.375 * (100vw - 48rem) / 45.75);
+    }
+}
 }
 
 @media (max-width: 988px) and (min-width: 61.75em) {
@@ -1861,6 +1952,18 @@ body::after {
   }
 
   .item img {
+    width: 34.375rem;
+  }
+
+  .item2 {
+    width: 34.375rem;
+  }
+
+  .item2 img {
+    width: 34.375rem;
+  }
+
+  .item2 img {
     width: 34.375rem;
   }
 }
@@ -1913,38 +2016,40 @@ body::after {
       width: calc(18.75rem + 15.625 * (100vw - 20rem) / 41.75);
     }
 }
-}
 
-@media (min-width: 48em) and (max-width: 93.75em) {
-@supports (width: clamp( 20rem , 4.9180327869rem  +  31.4207650273vw , 34.375rem )) {
-    .item2 img {
-      width: clamp( 20rem , 4.9180327869rem  +  31.4207650273vw , 34.375rem );
+@supports (width: clamp( 18.75rem , 11.2649700599rem  +  37.4251497006vw , 34.375rem )) {
+    .item2 {
+      width: clamp( 18.75rem , 11.2649700599rem  +  37.4251497006vw , 34.375rem );
     }
 }
 
-@supports not (width: clamp( 20rem , 4.9180327869rem  +  31.4207650273vw , 34.375rem )) {
-    .item2 img {
-      width: calc(20rem + 14.375 * (100vw - 48rem) / 45.75);
-    }
-}
-}
-
-@media (max-width: 47.99875em) and (min-width: 43.125em) {
-  .item2 img {
-    width: 34.375rem;
-  }
-}
-
-@media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 43.125em) {
-@supports (width: clamp( 20rem , 7.5675675676rem  +  62.1621621622vw , 34.375rem )) {
-    .item2 img {
-      width: clamp( 20rem , 7.5675675676rem  +  62.1621621622vw , 34.375rem );
+@supports not (width: clamp( 18.75rem , 11.2649700599rem  +  37.4251497006vw , 34.375rem )) {
+    .item2 {
+      width: calc(18.75rem + 15.625 * (100vw - 20rem) / 41.75);
     }
 }
 
-@supports not (width: clamp( 20rem , 7.5675675676rem  +  62.1621621622vw , 34.375rem )) {
+@supports (width: clamp( 20rem , 13.1137724551rem  +  34.4311377246vw , 34.375rem )) {
     .item2 img {
-      width: calc(20rem + 14.375 * (100vw - 20rem) / 23.125);
+      width: clamp( 20rem , 13.1137724551rem  +  34.4311377246vw , 34.375rem );
+    }
+}
+
+@supports not (width: clamp( 20rem , 13.1137724551rem  +  34.4311377246vw , 34.375rem )) {
+    .item2 img {
+      width: calc(20rem + 14.375 * (100vw - 20rem) / 41.75);
+    }
+}
+
+@supports (width: clamp( 18.75rem , 11.2649700599rem  +  37.4251497006vw , 34.375rem )) {
+    .item2 img {
+      width: clamp( 18.75rem , 11.2649700599rem  +  37.4251497006vw , 34.375rem );
+    }
+}
+
+@supports not (width: clamp( 18.75rem , 11.2649700599rem  +  37.4251497006vw , 34.375rem )) {
+    .item2 img {
+      width: calc(18.75rem + 15.625 * (100vw - 20rem) / 41.75);
     }
 }
 }
