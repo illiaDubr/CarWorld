@@ -1469,16 +1469,9 @@ body::after {
 
   .showmore__container {
     top: auto;
-    position: relative;
-  }
-
-  .showmore__container::before {
-    content: "";
     position: absolute;
-    background-color: #fafafa;
-    height: 100%;
-    left: -559px;
-    width: 765px;
+    left: 0px;
+    top: 200px;
   }
 
   .showmore__list {
@@ -1492,6 +1485,10 @@ body::after {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+  }
+
+  ._spoller-active {
+    padding-bottom: 450px;
   }
 
   .nav__body {
